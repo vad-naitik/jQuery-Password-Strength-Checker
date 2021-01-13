@@ -1,9 +1,3 @@
-
-$('#password').keyup(function(event) {
-    var password = $('#password').val();
-    checkPasswordStrength(password);
-});
-
 function checkPasswordStrength(password) {
 	var number     = /([0-9])/;
 	var upperCase  = /([A-Z])/;
