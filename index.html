@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
 	<title>jQuery Password Strength Checker</title>
 	<meta name="description" content="jQuery password strength checker with indicated password strength">
 	<meta name="keywords" content="jqeery, password, password_strength, strength_checker HTML">
@@ -13,9 +12,58 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="asset/password-strength.css">
 </head>
 <body>
-	
+	<div class="container">
+		<header id="header" class="text-center my-5">
+			<h1 class="font-weight-bold">jQuery Password Strength Checker</h1>
+			<p class="mt-3">jQuery password strength checker with indicated password strength</p>
+			<hr/>
+		</header><!-- /header -->
+		<content class="mx-5">
+			<div class="row justify-content-center">
+				<div class="col-9 ">
+					<form action="#" method="get" class="" accept-charset="utf-8">
+						<div class="form-group row">
+							<label class="col-sm-2 col-form-label" for="user_email">Email address</label>
+							<div class="col-sm-10">
+								<input type="email" class="form-control" name="user_email" id="user_email" placeholder="Enter email">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-2 col-form-label" for="password">Password</label>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" name="password" id="password" placeholder="Password">
+							</div>
+							<div class="col-sm-10 offset-sm-2">
+								<div id="password-strength-status"></div>
+								<ul class="pswd_info" id="passwordCriterion">
+									<li data-criterion="length" class="invalid">8-15 <strong>Characters</strong></li>
+									<li data-criterion="capital" class="invalid">At least <strong>one capital letter</strong></li>
+									<li data-criterion="small" class="invalid">At least <strong>one small letter</strong></li>
+									<li data-criterion="number" class="invalid">At least <strong>one number</strong></li>
+									<li data-criterion="special" class="invalid">At least <strong>one Specail Characters </strong></li>
+								</ul>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-sm-10 offset-sm-2">
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</content>
+		<footer>
+				
+		</footer>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="asset/password-strength.js"></script>
 </body>
 </html>
