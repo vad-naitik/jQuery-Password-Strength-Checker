@@ -1,0 +1,15 @@
+{
+    "name": "vad-naitik/jQuery-Password-Strength-Checker",
+    "description": "jQuery Password Strength Checker",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Naitik Vadgama",
+            "email": "vad.naitik@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {},
+    "require": {}
+}
